@@ -1,0 +1,80 @@
+[
+    {
+        "id":1,
+        "name":" Yamah Ri5 v3 ",
+        "description":"Yamaha Motor India has kick-started the new year the launch of the 2019 YZF-R15 V3.0 ABS priced at₹1.39 lakh (ex-showroom).That's a price hike of ₹ 12,000 over the non-ABS version.",
+        "img":"https://c.ndtvimg.com/2019-01/bpo2s93c_2019-yamaha-yzfr15-v30-abs_625x300_10_January_19.jpg",
+        "Price": 503000
+    },
+
+    {
+        "id":2,
+        "name":"KTM 690 Duke R",
+        "description":"The year began with a bang, quite literally when Bajaj Auto launched the KTM Duke 200 in India. The Duke 200 is the first motorcycle from the Austrian  motorcycle  maker KTM ",
+        
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXG_B1_xJVv6V8rLdpsvnrgifX_TKn3u-tg&usqp=CAU",
+        "Price": 405000
+    },
+    
+    {
+        "id":3,
+        "name":" Electric Motorcycles",
+        "description":"A slim two-wheeled way to zip across varied terrain; the whipping around the ability to swerve in and out of obstacles seamlessly. The best  electric   motorcycles of  2021 .",
+        "img":"https://www.bennetts.co.uk/-/media/bikesocial/2020-july-images/top-10-fastest-bikes/top-10-ten-fastest-bikes-2020-(11).ashx?h=493&la=en&w=740&hash=258AAACEAEECC3A97DC080D8E953B35CE07235DD",
+        "Price": 400000
+        
+    },
+    {
+        "id":4,
+        "name":"Modified Royal Enfield ",
+        "description":"The modified Royal Enfield Continental GT 535 is inspired by the BMW R100 brat style motorcycle. The modified motorcycle receives a massive makeover to deliver retro styling ",
+     
+        "img":"https://img.indianautosblog.com/2019/01/31/modified-royal-enfield-continental-gt-grigio-by-kr-4013.jpg",
+        "Price": 600000
+    },
+
+    {
+        "id":5,
+        "name":"Kawasaki Ninja 650",
+        "description":"If you’re looking for speed, this is the one. Kawasaki Ninja 650 generates 67.2-bhp of power and 65.7-nm of torque from its 649-cc engine. With the Ninja’s double cylinder engine. ",
+        "img":"https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/05/05185121/2020-650-KRT-hero1-scaled-1-e1588676173434.jpeg",
+        "Price": 402500
+    },
+
+    {
+        "id":6,
+        "name":"YAMAHA BIKE",
+        "description":"The good news for Yamaha fan followers and well-wishers in Bangladesh is that this webpage presents the current prices of almost all Yamaha motorcycles available in Bangladesh ",
+        
+        "img":"https://servoppf.com/wp-content/uploads/2014/05/2011-Ducati-1198SPa.jpg",
+        "Price": 300000
+    },
+
+    {
+        "id":7,
+        "name":" TVS RTR 160 4V",
+        "description":"The RTR 160 4V  borrows its design from its bigger brother, the Apache RTR 200  4V. The rear portion of the  motorcycle  bears  an  uncanny  resemblance to  the RTR 200, .",
+        "img":"https://www.outlookindia.com/public/uploads/editor/2018-10-01/1538390773.jpg",
+        "Price": 20000
+    },
+    
+    {
+        "id":8,
+        "name":"Royal Enfield Classic ",
+        "description":"Introducing the new  motorcycle variants, Mr. Vinod K. Dasari - CEO, Royal  Enfield said, “Classic 350 has been one of our most  successful  motorcycles for over a  decade. ",
+     
+        "img":"https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/Royal_Enfield_500_Stealth_Blac.png?zdOWkAXPCjiwJYo8M.vAEcbWvvg3WvZT&size=770:433",
+        "Price": 600000
+    },
+
+    {
+        "id":9,
+        "name":"VMW BIKE",
+        "description":"BMW R18 is a cruiser bike available at a starting price of Rs. 19,90,681 in India. It is available in 3 variants and 3 colours with top variant price starting from Rs. 24,02,199.",
+        "img":"https://www.bennetts.co.uk/-/media/bikesocial/2020-july-images/top-10-fastest-bikes/top-10-ten-fastest-bikes-2020-(17).ashx?h=493&w=740&la=en&hash=5609CD804C47C4F3F4452527643EA6A105D8DEE8",
+        "Price": 50000
+    }
+
+
+ 
+]
