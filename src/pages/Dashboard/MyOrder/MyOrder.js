@@ -14,7 +14,7 @@ const MyOrder = ({ order }) => {
     const handleCancelOrder = id => {
         const process = window.confirm('Are you sure to delete?')
         if (process) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://still-woodland-21576.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

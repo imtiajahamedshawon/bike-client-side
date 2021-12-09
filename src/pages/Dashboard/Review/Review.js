@@ -33,7 +33,7 @@ const Review = () => {
     const handleSubmit = e => {
         e.preventDefault()
         const ratingData = { rate, value, name: user?.displayName, email: user?.email }
-        fetch('http://localhost:5000/review', {
+        fetch('https://still-woodland-21576.herokuapp.com/review', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -50,7 +50,7 @@ const Review = () => {
     }
     return (
         <Container>
-            <Typography variant='h4'>
+            <Typography style={{ color: '#77F5EA' }}variant='h4'>
                 Rate us
             </Typography>
             <Box

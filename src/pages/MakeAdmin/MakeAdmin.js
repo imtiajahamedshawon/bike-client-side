@@ -4,16 +4,20 @@ import useAuth from '../../hooks/useAuth';
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
-    const [success, setSuccess] = useState(false);
     const { token } = useAuth()
+
 
 
     const handleOnBlur = e => {
         setEmail(e.target.value);
     }
+
+
+    
+  
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://still-woodland-21576.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,
@@ -23,17 +27,16 @@ const MakeAdmin = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (data.modifiedCount) {
-                    console.log(data);
-                    setSuccess(true);
-                }
+
+                    console.log(data);               
+                                            
             })
      
         e.preventDefault()
     }
     return (
         <div>
-            <h1>Make an admin</h1>
+            <h1 style={{ color: '#77F5EA' }}>Make an admin</h1>
             <CardContent style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
                 <form onSubmit={handleAdminSubmit}>
                     <Grid container spacing={1}>
@@ -43,7 +46,7 @@ const MakeAdmin = () => {
                                 onBlur={handleOnBlur} placeholder="Enter email" variant="outlined" fullWidth required />
                         </Grid>
                         <Grid xs={12} item>
-                            <Button type="submit" variant="contained" color="primary" fullWidth>MakeAdmin</Button>
+                            <Button type="makeAdmin" variant="contained" color="primary" fullWidth>MakeAdmin</Button>
                         </Grid>
                     </Grid>
                 </form>

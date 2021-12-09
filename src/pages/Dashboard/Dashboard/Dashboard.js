@@ -39,7 +39,7 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div style={{ backgroundColor: '#1E8EE9 ', minHeight: '100%' }}>
+        <div style={{ backgroundColor: 'black ', minHeight: '100%' }}>
             <Toolbar  >
                 <Typography variant='h4' sx={{ color: 'yellow' }}>
                     Sport Bike
@@ -47,22 +47,24 @@ function Dashboard(props) {
             </Toolbar>
             <Divider />
             <List>
+            {/* sx={{ color: '#77F5EA' }} */}
 
-                <Link style={{ textDecoration: 'none' }} to={`${url}/myOrders`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>My Orders</Button></Link>
+                <Link style={{ textDecoration: 'none',  }} to={`${url}/myOrders`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>My Orders</Button></Link>
 
-                <Link style={{ textDecoration: 'none' }} to={`${url}/collections`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>Collections</Button></Link>
+                <Link style={{ textDecoration: 'none', }} to={`${url}/collections`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>Collections</Button></Link>
+
 
                 {admin && <Box>
 
-                    <Link style={{ textDecoration: 'none' }} to={`${url}/makeAdmin`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>MakeAdmin</Button></Link>
+                    <Link style={{ textDecoration: 'none' }} to={`${url}/makeAdmin`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>MakeAdmin</Button></Link>
                 </Box>}
 
-                <Link style={{ textDecoration: 'none' }} to={`${url}/payment`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>Payment</Button></Link>
+                <Link style={{ textDecoration: 'none' }} to={`${url}/payment`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>Payment</Button></Link>
 
 
-                <Link style={{ textDecoration: 'none' }} to={`${url}/review`}><Button variant='contained' sx={{ width: '95%', m: 1 }}>Review</Button></Link>
+                <Link style={{ textDecoration: 'none' }} to={`${url}/review`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>Review</Button></Link>
 
-                <Button onClick={logOut} variant='contained' sx={{ width: '95%', m: 1 }}>Log out</Button>
+                <Button onClick={logOut} variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>Log out</Button>
             </List>
         </div>
     );
@@ -89,7 +91,7 @@ function Dashboard(props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap component="div">
+                    <Typography sx={{ color: '#77F5EA' }} variant="h6" noWrap component="div">
                         Dashboard
                     </Typography>
                 </Toolbar>
@@ -147,9 +149,12 @@ function Dashboard(props) {
                     <Route path={`${path}/review`}>
                         <Review></Review>
                     </Route>
-                    <AdminRoute path={`${path}/makeAdmin`}>
+                    <Route path={`${path}/MakeAdmin`}>
                         <MakeAdmin></MakeAdmin>
-                    </AdminRoute>
+                    </Route>
+                    <AdminRoute path={`${path}/MakeAdmin`}>
+                        <MakeAdmin></MakeAdmin>
+                    </AdminRoute> 
                 </Switch>
             </Box>
         </Box>
