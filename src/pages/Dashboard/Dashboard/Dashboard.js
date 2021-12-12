@@ -25,6 +25,7 @@ import Collections from '../../Home/Home/Collections/Collections';
 import MakeAdmin from '../../MakeAdmin/MakeAdmin';
 import useAuth from '../../../hooks/useAuth';
 import AdminRoute from '../../../Login/Login/AdminRoute/AdminRoute';
+import Home from '../../Home/Home/Home'
 const drawerWidth = 240;
 
 function Dashboard(props) {
@@ -48,6 +49,8 @@ function Dashboard(props) {
             <Divider />
             <List>
             {/* sx={{ color: '#77F5EA' }} */}
+
+                <Link style={{ textDecoration: 'none',  }} to={`${url}/home`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>Home</Button></Link>
 
                 <Link style={{ textDecoration: 'none',  }} to={`${url}/myOrders`}><Button variant='contained' sx={{ width: '95%',color: '#77F5EA', m: 1 }}>My Orders</Button></Link>
 
@@ -151,6 +154,9 @@ function Dashboard(props) {
                     </Route>
                     <Route path={`${path}/MakeAdmin`}>
                         <MakeAdmin></MakeAdmin>
+                    </Route>
+                    <Route path={`${path}/home`}>
+                        <Home></Home>
                     </Route>
                     <AdminRoute path={`${path}/MakeAdmin`}>
                         <MakeAdmin></MakeAdmin>
